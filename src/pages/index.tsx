@@ -1,4 +1,5 @@
 import { NextSeo } from 'next-seo';
+import Image from 'next/image';
 import { FaTwitter, FaInstagram, FaGithub } from 'react-icons/fa';
 
 export default function Home() {
@@ -25,22 +26,24 @@ export default function Home() {
         <div className="bg-white rounded-lg shadow-md px-24 py-32">
           <div className="flex flex-col items-center justify-center mb-8">
             <div className="h-20 w-20 relative rounded-full overflow-hidden drop-shadow-lg">
-              <img
+              <Image
                 className="absolute inset-0 h-full w-full object-cover"
                 src="/1648842147092.jpeg"
                 alt="dedi irawan"
+                width={500}
+                height={500}
               />
             </div>
             <h1 className="text-xl font-bold m-4">Dedi Irawan</h1>
           </div>
           <div className="flex flex-col gap-4 text-gray-800 text-lg font-medium">
-            <a href="https://twitter.com/dediirawan" target="_blank" className="flex gap-2 items-center justify-center bg-red-200 rounded-md drop-shadow-lg">
+            <a href="https://twitter.com/dediakairawan" target="_blank" rel='noreferrer' className="flex gap-2 items-center justify-center bg-red-200 rounded-md drop-shadow-lg">
               <FaTwitter className="text-xl" /> Twitter
             </a>
-            <a href="https://instagram.com/yourusername" target="_blank" className="flex gap-2 items-center justify-center bg-red-200 rounded-md  drop-shadow-lg">
+            <a href="https://www.instagram.com/dediirwannn_/" target="_blank" rel='noreferrer' className="flex gap-2 items-center justify-center bg-red-200 rounded-md  drop-shadow-lg">
               <FaInstagram className="text-xl" /> Instagram
             </a>
-            <a href="https://github.com/dediirawanuti" target="_blank" className="flex gap-2 items-center justify-center bg-red-200 rounded-md drop-shadow-lg">
+            <a href="https://github.com/dediirawanuti" target="_blank" rel='noreferrer' className="flex gap-2 items-center justify-center bg-red-200 rounded-md drop-shadow-lg">
               <FaGithub className="text-xl" /> Github
             </a>
           </div>
