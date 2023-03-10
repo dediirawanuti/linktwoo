@@ -22,7 +22,7 @@ export default function Home() {
         }}
       />
       <div className="flex flex-col justify-center items-center h-screen bg-gray-100 ">
-      <div className="bg-white rounded-lg shadow-md px-24 py-32">
+        <div className="bg-white rounded-lg shadow-md px-24 py-32">
           <div className="flex flex-col items-center justify-center mb-8">
             <div className="h-20 w-20 relative rounded-full overflow-hidden drop-shadow-lg">
               <img
@@ -33,20 +33,20 @@ export default function Home() {
             </div>
             <h1 className="text-xl font-bold m-4">Dedi Irawan</h1>
           </div>
-        <div className="flex flex-col gap-4 text-gray-800 text-lg font-medium">
-          <a href="https://twitter.com/dediirawan" target="_blank" className="flex gap-2 items-center justify-center bg-red-200 rounded-md drop-shadow-lg">
-            <FaTwitter className="text-xl" /> Twitter
-          </a>
-          <a href="https://instagram.com/yourusername" target="_blank" className="flex gap-2 items-center justify-center bg-red-200 rounded-md  drop-shadow-lg">
-            <FaInstagram className="text-xl" /> Instagram
-          </a>
-          <a href="https://github.com/dediirawanuti" target="_blank" className="flex gap-2 items-center justify-center bg-red-200 rounded-md drop-shadow-lg">
-            <FaGithub className="text-xl" /> Github
-          </a>
-        </div>
+          <div className="flex flex-col gap-4 text-gray-800 text-lg font-medium">
+            <a href="https://twitter.com/dediirawan" target="_blank" className="flex gap-2 items-center justify-center bg-red-200 rounded-md drop-shadow-lg">
+              <FaTwitter className="text-xl" /> Twitter
+            </a>
+            <a href="https://instagram.com/yourusername" target="_blank" className="flex gap-2 items-center justify-center bg-red-200 rounded-md  drop-shadow-lg">
+              <FaInstagram className="text-xl" /> Instagram
+            </a>
+            <a href="https://github.com/dediirawanuti" target="_blank" className="flex gap-2 items-center justify-center bg-red-200 rounded-md drop-shadow-lg">
+              <FaGithub className="text-xl" /> Github
+            </a>
+          </div>
         </div>
         <div className="flex text-center text-sm m-2">
-          Copyright © Dedi Irawan 
+          Copyright © Dedi Irawan
         </div>
       </div>
     </>
