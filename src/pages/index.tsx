@@ -1,6 +1,6 @@
 import { NextSeo } from 'next-seo';
 import Image from 'next/image';
-import { FaTwitter, FaInstagram, FaGithub } from 'react-icons/fa';
+import { FaTwitter, FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export default function Home() {
   return (
