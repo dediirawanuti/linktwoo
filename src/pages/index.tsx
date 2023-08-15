@@ -9,7 +9,7 @@ export default function Home() {
         title="Dedi Irawan | Linktwoo"
         description="Add a description for your Linktree here."
         openGraph={{
-          title: 'Your Name | Linktree',
+          title: 'Dedi Irawan | Linktwoo',
           description: 'Add a description for your Linktree here.',
           images: [
             {
@@ -34,7 +34,7 @@ export default function Home() {
                 height={500}
               />
             </div>
-            <h1 className="text-xl font-bold m-4">Dedi Irawan</h1>
+            <h1 className="text-xl font-bold m-4">Dedi Irawan - Web Developer</h1>
           </div>
           <div className="flex flex-col gap-4 text-gray-800 text-lg font-medium">
             <a href="https://twitter.com/dediakairawan" target="_blank" rel='noreferrer' className="flex gap-2 items-center justify-center bg-red-200 rounded-md drop-shadow-lg">
@@ -45,6 +45,9 @@ export default function Home() {
             </a>
             <a href="https://github.com/dediirawanuti" target="_blank" rel='noreferrer' className="flex gap-2 items-center justify-center bg-red-200 rounded-md drop-shadow-lg">
               <FaGithub className="text-xl" /> Github
+            </a>
+            <a href="https://www.linkedin.com/in/dediirawan024/" target="_blank" rel='noreferrer' className="flex gap-2 items-center justify-center bg-red-200 rounded-md drop-shadow-lg">
+              <FaLinkedin className="text-xl" /> LinkedIn
             </a>
           </div>
         </div>
