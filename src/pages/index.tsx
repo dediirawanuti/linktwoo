@@ -1,59 +1,53 @@
-import { NextSeo } from 'next-seo';
-import Image from 'next/image';
-import { FaTwitter, FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa';
+import Head from 'next/head';
+import { FaTwitter, FaInstagram, FaGithub, FaLinkedin, FaSafari } from 'react-icons/fa';
+import styles from "../styles/Home.module.css";
+import 'animate.css';
+
+import Image from '@/components/Image'
+import Navbar from '@/components/Navbar'
+
 
 export default function Home() {
   return (
     <>
-      <NextSeo
-        title="Dedi Irawan | Linktwoo"
-        description="Add a description for your Linktree here."
-        openGraph={{
-          title: 'Dedi Irawan | Linktwoo',
-          description: 'Add a description for your Linktree here.',
-          images: [
-            {
-              url: '/vercel.svg',
-              width: 1200,
-              height: 630,
-              alt: 'Linktwoo',
-            },
-          ],
-          site_name: 'Dedi Irawan | Linktwoo',
-        }}
-      />
-      <div className="flex flex-col justify-center items-center h-screen bg-gray-100 ">
-        <div className="bg-white rounded-lg shadow-md px-24 py-32">
-          <div className="flex flex-col items-center justify-center mb-8">
-            <div className="h-20 w-20 relative rounded-full overflow-hidden drop-shadow-lg">
-              <Image
-                className="absolute inset-0 h-full w-full object-cover"
-                src="/1648842147092.jpeg"
-                alt="dedi irawan"
-                width={500}
-                height={500}
-              />
-            </div>
-            <h1 className="text-xl font-bold m-4">Dedi Irawan - Web Developer</h1>
+      <div className={styles.container}>
+        <Head>
+          <title>Dedi Irawan | Linktwoo</title>
+          <meta name="description" content="Add a description for your Linktree here." />
+          <link rel="shortcut icon" href="faviconn.ico" type="image/x-icon" />
+        </Head>
+        <main className={styles.main}>
+          {/* <Navbar /> */}
+          <Image />
+          {/* <img className={styles.logo} src="/1688224876902.png" alt="dedi irawan" /> */}
+          <p className={styles.description}>Dedi Irawan | Web Developer</p>
+
+          <div className={styles.grid}>
+            <a href="https://twitter.com/dediakairawan" target='__blank' className={styles.card}>
+              <h2 className="animate__animated animate__fadeIn animate__delay-0.5s"><FaTwitter className="text-xl animate__animated animate__slideInUp" /> X</h2>
+            </a>
+
+            <a href="https://www.instagram.com/dediirwannn_/" target='__blank' className={styles.card}>
+              <h2 className="animate__animated animate__fadeIn animate__delay-0.5s"><FaInstagram className="text-xl animate__animated animate__slideInUp" /> Instagram</h2>
+            </a>
+
+            <a href="https://github.com/dediirawanuti" target='__blank' className={styles.card}>
+              <h2 className="animate__animated animate__fadeIn animate__delay-0.5s"><FaGithub className="text-xl animate__animated animate__slideInUp" /> Github</h2>
+            </a>
+
+            <a href="https://www.linkedin.com/in/dediirawan024/" target='__blank' className={styles.card}>
+              <h2 className="animate__animated animate__fadeIn animate__delay-0.5s"><FaLinkedin className="text-xl animate__animated animate__slideInUp" /> LinkedIn</h2>
+            </a>
+
+            <a href="https://dediirawan.my.id" target='__blank' className={styles.card}>
+              <h2 className="animate__animated animate__fadeIn animate__delay-0.5s"><FaSafari className="text-xl animate__animated animate__slideInUp" /> Portofolio</h2>
+            </a>
+
           </div>
-          <div className="flex flex-col gap-4 text-gray-800 text-lg font-medium">
-            <a href="https://twitter.com/dediakairawan" target="_blank" rel='noreferrer' className="flex gap-2 items-center justify-center bg-red-200 rounded-md drop-shadow-lg">
-              <FaTwitter className="text-xl" /> Twitter
-            </a>
-            <a href="https://www.instagram.com/dediirwannn_/" target="_blank" rel='noreferrer' className="flex gap-2 items-center justify-center bg-red-200 rounded-md  drop-shadow-lg">
-              <FaInstagram className="text-xl" /> Instagram
-            </a>
-            <a href="https://github.com/dediirawanuti" target="_blank" rel='noreferrer' className="flex gap-2 items-center justify-center bg-red-200 rounded-md drop-shadow-lg">
-              <FaGithub className="text-xl" /> Github
-            </a>
-            <a href="https://www.linkedin.com/in/dediirawan024/" target="_blank" rel='noreferrer' className="flex gap-2 items-center justify-center bg-red-200 rounded-md drop-shadow-lg">
-              <FaLinkedin className="text-xl" /> LinkedIn
-            </a>
-          </div>
-        </div>
-        <div className="flex text-center text-sm m-2">
-          Copyright © Dedi Irawan
-        </div>
+        </main>
+        <footer className={styles.footer}>
+          <a href="https://dediirawan.my.id" target='__blank'>Copyright &copy; onlydev.id</a>
+        </footer>
       </div>
     </>
   );
